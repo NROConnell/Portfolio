@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Tech Number Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="game-title">Purple Tech Number Game</h2>
+        <h1>🎲 Random Number Generator</h1>
+
+        <div class="inputs">
+            <label>Min: <input type="number" id="min" value="1" /></label>
+            <label>Max: <input type="number" id="max" value="100" /></label>
+        </div>
+        <button id="generateBtn">Generate</button>
+        <button id="revealBtn">Reveal Answer</button>
+        <div class="result" id="result">Your number will appear here</div>
+
+        <div class="guess-section">
+            <input type="number" id="guessInput" placeholder="Enter your guess" />
+            <button id="guessBtn">Submit Guess</button>
+            <div class="feedback" id="feedback">Start guessing!</div>
+        </div>
+
+        <ul id="guessList" class="guess-list"></ul>
+
+        <h3>🏅 Leaderboard</h3>
+        <ul id="leaderboard" class="leaderboard-list"></ul>
+        <button id="clearLeaderboardBtn">Clear Leaderboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

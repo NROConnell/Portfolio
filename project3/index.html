@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple Tech</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Purple Tech</h1>
+        <p>Innovative visuals in a purple world</p>
+    </header>
+
+    <!-- Gallery 1: Carousel -->
+    <section class="carousel-section">
+        <h2>Tech Showcase</h2>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-images">
+                <img src="./images/1.png" alt="Tech 1" loading="lazy" />
+                <img src="./images/2.png" alt="Tech 2" loading="lazy" />
+                <img src="./images/3.png" alt="Tech 3" loading="lazy" />
+                <img src="./images/4.png" alt="Tech 4" loading="lazy" />
+                <img src="./images/5.png" alt="Tech 5" loading="lazy" />
+                <img src="./images/6.png" alt="Tech 6" loading="lazy" />
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Gallery 2: Masonry Grid -->
+    <section class="grid-section">
+        <h2>Digital Art Grid</h2>
+        <div class="grid-gallery">
+            <img data-src="./images/1.png" alt="Art 1" class="grid-img lazy" />
+            <img data-src="./images/2.png" alt="Art 2" class="grid-img lazy" />
+            <img data-src="./images/3.png" alt="Art 3" class="grid-img lazy" />
+            <img data-src="./images/4.png" alt="Art 4" class="grid-img lazy" />
+            <img data-src="./images/5.png" alt="Art 5" class="grid-img lazy" />
+            <img data-src="./images/6.png" alt="Art 6" class="grid-img lazy" />
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
